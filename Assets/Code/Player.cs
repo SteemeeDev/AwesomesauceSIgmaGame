@@ -6,6 +6,7 @@ public class Player : Entity
     [SerializeField] private float RotationSpeed;
     [SerializeField] private float RotationThreshold = 5;
     [SerializeField] private Transform PlayerMeshTransform;
+    [SerializeField] private Animator PlayerAnimator;
 
     private Rigidbody rb;
 
@@ -25,6 +26,12 @@ public class Player : Entity
             Quaternion targetRotation = Quaternion.LookRotation(input, Vector3.up);
 
             PlayerMeshTransform.rotation = Quaternion.Slerp(PlayerMeshTransform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
+
+            PlayerAnimator.SetBool("Moving", true);
+        }
+        else
+        {
+            PlayerAnimator.SetBool("Moving", false);
         }
 
         rb.velocity = movement;
