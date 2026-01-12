@@ -263,7 +263,6 @@ GameObject:
   - component: {fileID: 2934361061704222380}
   - component: {fileID: 6236235678723602488}
   - component: {fileID: 7113028870065491918}
-  - component: {fileID: 3432039635448831529}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -336,29 +335,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3432039635448831529
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936152207775523556}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1050418364551571715
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +346,7 @@ GameObject:
   - component: {fileID: 3246197530415281370}
   - component: {fileID: 9190624716026473023}
   - component: {fileID: 9012535123127930477}
+  - component: {fileID: 4534299052523045420}
   m_Layer: 0
   m_Name: Devil
   m_TagString: Untagged
@@ -450,6 +427,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4534299052523045420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050418364551571715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d7f1be68e339144bc97049ee38a695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3980960888903744247
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +450,6 @@ GameObject:
   - component: {fileID: 4834078827562482841}
   - component: {fileID: 3161016121065683940}
   - component: {fileID: 7082577155344517953}
-  - component: {fileID: 1469449495001709044}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -534,29 +522,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1469449495001709044
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3980960888903744247}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4111701917542016769
 GameObject:
   m_ObjectHideFlags: 0

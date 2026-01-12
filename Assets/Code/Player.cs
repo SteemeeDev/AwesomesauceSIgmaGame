@@ -34,6 +34,6 @@ public class Player : Entity
             PlayerAnimator.SetBool("Moving", false);
         }
 
-        rb.velocity = movement;
+        rb.AddForce(movement * Time.deltaTime, ForceMode.Impulse);
     }
 }
