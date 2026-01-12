@@ -8,12 +8,12 @@ public class Player : Entity
     [SerializeField] private Transform PlayerMeshTransform;
     [SerializeField] private Animator PlayerAnimator;
 
-    private Rigidbody rb;
+    private CharacterController cc;
 
     void Start()
     {
         maxMoveSpeed = MaxMoveSpeed;
-        rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -34,6 +34,6 @@ public class Player : Entity
             PlayerAnimator.SetBool("Moving", false);
         }
 
-        rb.AddForce(movement * Time.deltaTime, ForceMode.Impulse);
+        cc.Move(movement * Time.deltaTime);
     }
 }
